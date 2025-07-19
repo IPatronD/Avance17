@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Colitas Felices :: Welcome</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/styleBienvenidos.css">
+    <link rel="icon" href="../img/logo/Logo.png" type="image/png">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="../htmlIngles/indexIngles.html">
+                    <img src="../img/logo/Logo.png" alt="Logo Colitas Felices">
+                </a>
+            </div>
+
+            <!-- Botón hamburguesa (solo visible en móvil) -->
+            <button class="menu-hamburguesa" aria-label="Menú">
+                <span class="barra-hamburguesa"></span>
+                <span class="barra-hamburguesa"></span>
+                <span class="barra-hamburguesa"></span>
+            </button>
+
+            <!-- Menú normal (visible en desktop) -->
+            <div class="menu">
+                <a href="../html/bienvenidos.html" aria-label="Switch to Spanish">🌐 ESP</a>
+                <a href="../htmlIngles/nosotrosIngles.html">About </a>
+                <a href="../htmlIngles/adoptaIngles.html">Adopt</a>
+                <a href="../htmlIngles/dudasIngles.html">Doubts</a>
+                <a href="../htmlIngles/donaIngles.html">Donate</a>
+                <a href="../htmlIngles/contactoIngles.html">Contact</a>
+
+                <!-- Menú de cuenta (se actualiza automáticamente) -->
+                <div class="submenu">
+                    <a href="#" class="submenu-trigger">My Account <span class="submenu-icon">▾</span></a>
+                    <div class="submenu-opciones">
+                        <!-- Contenido dinámico (se llena con auth-state.js) -->
+                        <a href="../htmlIngles/iniciarSesionIngles.html">Log In</a>
+                        <a href="../htmlIngles/registrateIngles.html">Sign Up</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="welcome-container">
+        <h2 class="welcome-title">Welcome to Colitas Felices <span class="paw-icon">🐾</span>!</h2>
+        <p class="welcome-message">It's great to see you again, <strong id="user-name-display"
+                class="user-name">User</strong>!</p>
+
+        <div class="dashboard">
+            <div class="dashboard-card">
+                <div class="card-header">
+                    <span class="card-icon">📋</span>
+                    <h3>Active Adoptions: <span class="highlight">2</span></h3>
+                </div>
+                <ul class="card-list">
+                    <li class="card-item"><strong>Rocky</strong> – Adopted on April 15, 2025</li>
+                    <li class="card-item"><strong>Luna</strong> – In adaptation process (last visit: May 20, 2025)</li>
+                </ul>
+                <div class="button-container">
+                    <a href="./adoptaIngles.html" class="action-button">Go to Adoptions</a>
+                </div>
+            </div>
+
+            <div class="dashboard-card">
+                <div class="card-header">
+                    <span class="card-icon">📅</span>
+                    <h3>Pending Appointment</h3>
+                </div>
+                <ul class="card-list">
+                    <li class="card-item">Meet <strong>Max</strong> – Scheduled for <strong>May 30, 2025</strong> at
+                        16:00 hs</li>
+                </ul>
+                <br><br>
+                <div class="button-container">
+                    <a href="./contactoIngles.html" class="action-button">Schedule New Appointment</a>
+                </div>
+            </div>
+
+            <div class="dashboard-card">
+                <div class="card-header">
+                    <span class="card-icon">💌</span>
+                    <h3>Important Messages</h3>
+                </div>
+                <ul class="card-list">
+                    <li class="card-item">Don't forget to bring your ID and proof of address to your next visit.</li>
+                    <li class="card-item">Remember to complete the adaptation survey before May 28.</li>
+                </ul>
+            </div>
+
+            <div class="dashboard-card">
+                <div class="card-header">
+                    <span class="card-icon">💖</span>
+                    <h3>Donations Made</h3>
+                </div>
+                <ul class="card-list">
+                    <li class="card-item">Last donation: <strong>S/ 500</strong> – May 10, 2025</li>
+                    <li class="card-item">Total donation history: <strong>S/ 2,350</strong></li>
+                </ul>
+                <div class="button-container">
+                    <a href="./donaIngles.html" class="action-button donation-button">Make a Donation</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="welcome-footer">
+            <span class="dog-icon">🐶</span>
+            <p>Thank you for supporting <strong>Colitas Felices</strong> and giving love to those who need it most!</p>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-contenedor">
+            <div class="footer-logo">
+                <h2>Colitas<span>Felices</span></h2>
+            </div>
+            <div class="footer-links">
+                <a href="../htmlIngles/contactoIngles.html">Contact</a>
+                <a href="../htmlIngles/AvisoLegalIngles.html">Legal Notice</a>
+                <a href="../htmlIngles/PoliticaPrivacidadIngles.html">Privacy Policy</a>
+                <a href="../htmlIngles/PoliticaCookiesIngles.html">Cookie Policy</a>
+                <a href="../htmlIngles/contactoIngles.html">Whistleblower Channel</a>
+                <a href="../htmlIngles/mapaSitioWebIngles.html">Website Sitemap</a>
+            </div>
+            <div class="footer-social">
+                <h3>Follow us</h3>
+                <a href="https://www.instagram.com" target="_blank"><img
+                        src="https://cdn-icons-png.flaticon.com/128/1384/1384031.png" alt="Instagram"></a>
+                <a href="https://www.facebook.com" target="_blank"><img
+                        src="https://cdn-icons-png.flaticon.com/24/2111/2111392.png" alt="Facebook"></a>
+                <a href="https://www.youtube.com" target="_blank"><img
+                        src="https://cdn-icons-png.flaticon.com/128/1077/1077046.png" alt="YouTube"></a>
+                <a href="https://tiktok.com" target="_blank"><img
+                        src="https://cdn-icons-png.flaticon.com/128/3046/3046125.png" alt="TikTok"></a>
+            </div>
+            <div class="footer-contact">
+                <h3>Contact</h3>
+                <p><strong>(044) 456-7890</strong></p>
+                <p>123 Animal Love Street, Trujillo City</p>
+                <p><a href="mailto:contacto@colitasFelices.org">contacto@colitasFelices.org</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Website created by <strong>Ariana Fernandez, David García, Diego Cabanillas, and Paula Rodríguez</strong>
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Obtener el correo del localStorage
+            const userEmail = localStorage.getItem('userEmail');
+
+            // Redirigir si no hay usuario logueado
+            if (!userEmail) {
+                window.location.href = './iniciarSesion.html';
+                return;
+            }
+
+            // Extraer el nombre del correo (parte antes del @)
+            const userName = userEmail.split('@')[0];
+
+            // Mostrar el nombre en la página
+            const nameDisplay = document.getElementById('user-name-display');
+            if (nameDisplay) {
+                nameDisplay.textContent = userName;
+
+                // Opcional: Guardar en localStorage para uso en otras páginas
+                localStorage.setItem('userName', userName);
+            }
+
+            // Configurar logout si existe el botón
+            const logoutBtn = document.querySelector('.logout-btn');
+            if (logoutBtn) {
+                logoutBtn.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    localStorage.removeItem('userEmail');
+                    localStorage.removeItem('userName');
+                    window.location.href = '../index.html';
+                });
+            }
+        });
+    </script>
+    <script src="../main.js" defer></script>
+    <script src="../js/auth-state-Ingles.js" defer></script>
+</body>
+
+</html>

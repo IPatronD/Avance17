@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colitas Felices :: Donate</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/styleDona.css">
+    <link rel="icon" href="../img/logo/Logo.png" type="image/png">
+</head>
+
+<body>
+
+    <!-- Menú de opciones -->
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="../htmlIngles/indexIngles.html">
+                    <img src="../img/logo/Logo.png" alt="Logo Colitas Felices">
+                </a>
+            </div>
+
+            <!-- Botón hamburguesa (solo visible en móvil) -->
+            <button class="menu-hamburguesa" aria-label="Menú">
+                <span class="barra-hamburguesa"></span>
+                <span class="barra-hamburguesa"></span>
+                <span class="barra-hamburguesa"></span>
+            </button>
+
+            <!-- Menú normal (visible en desktop) -->
+            <div class="menu">
+                <a href="../html/dona.html" aria-label="Switch to Spanish">🌐 ESP</a>
+                <a href="../htmlIngles/nosotrosIngles.html">About </a>
+                <a href="../htmlIngles/adoptaIngles.html">Adopt</a>
+                <a href="../htmlIngles/dudasIngles.html">Doubts</a>
+                <a href="../htmlIngles/donaIngles.html">Donate</a>
+                <a href="../htmlIngles/contactoIngles.html">Contact</a>
+
+                <!-- Menú de cuenta (se actualiza automáticamente) -->
+                <div class="submenu">
+                    <a href="#" class="submenu-trigger">My Account <span class="submenu-icon">▾</span></a>
+                    <div class="submenu-opciones">
+                        <!-- Contenido dinámico (se llena con auth-state.js) -->
+                        <a href="../htmlIngles/iniciarSesionIngles.html">Log In</a>
+                        <a href="../htmlIngles/registrateIngles.html">Sign Up</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="seccion-donacion">
+        <div class="concientizacion-contenedor">
+            <h1>Your Help Changes Lives!</h1>
+            <p>
+                Your support is vital for thousands of Peruvian animals who are suffering. With your contribution, we
+                make rescue,
+                recovery, and veterinary care possible. You help cover sterilizations, food, temporary homes, and more.
+                Every donation matters to give them a second chance at life.
+            </p>
+        </div>
+
+        <main class="dona">
+            <h1>Donation Options</h1>
+            <p>
+                Any contribution is a big help for our furry friends. You can donate through the following methods:
+            </p>
+
+            <div class="contenedor-donacion">
+                <div class="tarjeta-donacion">
+                    <h2>BCP Account</h2>
+                    <br>
+                    <p>No. 57094477718091</p>
+                    <a href="#" id="verBCP" class="toggle-btn">View details</a>
+                </div>
+                <div class="tarjeta-donacion">
+                    <h2>Yape</h2>
+                    <br>
+                    <p>950 515 954</p>
+                    <a href="#" id="verQR" class="toggle-btn">View QR code</a>
+                </div>
+                <div class="tarjeta-donacion">
+                    <h2>Card</h2>
+                    <p>We accept debit and credit card payments</p>
+                    <a href="./donaAhoraIngles.html" class="donar-btn">Donate Now</a>
+                </div>
+            </div>
+
+            <div class="detalles-donacion">
+                <div id="contenedorBCP" class="detalle-contenedor">
+                    <img src="../img/donaciones/DonacionesBCPIngles.png" alt="BCP Account" class="donacion-img">
+                </div>
+                <div id="contenedorQR" class="detalle-contenedor">
+                    <img src="../img/donaciones/Doncaciones.png" alt="Donations QR" class="donacion-img">
+                </div>
+            </div>
+        </main>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-contenedor">
+            <div class="footer-logo">
+                <h2>Colitas<span>Felices</span></h2>
+            </div>
+            <div class="footer-links">
+                <a href="../htmlIngles/contactoIngles.html">Contact</a>
+                <a href="../htmlIngles/AvisoLegalIngles.html">Legal Notice</a>
+                <a href="../htmlIngles/PoliticaPrivacidadIngles.html">Privacy Policy</a>
+                <a href="../htmlIngles/PoliticaCookiesIngles.html">Cookie Policy</a>
+                <a href="../htmlIngles/contactoIngles.html">Whistleblower Channel</a>
+                <a href="../htmlIngles/mapaSitioWebIngles.html">Website Sitemap</a>
+            </div>
+            <div class="footer-social">
+                <h3>Follow us</h3>
+                <a href="https://www.instagram.com" target="_blank"><img
+                        src="https://cdn-icons-png.flaticon.com/128/1384/1384031.png" alt="Instagram"></a>
+                <a href="https://www.facebook.com" target="_blank"><img
+                        src="https://cdn-icons-png.flaticon.com/24/2111/2111392.png" alt="Facebook"></a>
+                <a href="https://www.youtube.com" target="_blank"><img
+                        src="https://cdn-icons-png.flaticon.com/128/1077/1077046.png" alt="YouTube"></a>
+                <a href="https://tiktok.com" target="_blank"><img
+                        src="https://cdn-icons-png.flaticon.com/128/3046/3046125.png" alt="TikTok"></a>
+            </div>
+            <div class="footer-contact">
+                <h3>Contact</h3>
+                <p><strong>(044) 456-7890</strong></p>
+                <p>123 Animal Love Street, Trujillo City</p>
+                <p><a href="mailto:contacto@colitasFelices.org">contacto@colitasFelices.org</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Website created by <strong>Ariana Fernandez, David García, Diego Cabanillas, and Paula Rodríguez</strong>
+            </p>
+        </div>
+    </footer>
+
+    <script defer src="../main.js"></script>
+    <script src="../js/auth-state-Ingles.js" defer></script>
+</body>
+
+
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Colitas Felices :: Puppy Pedro</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/styleHistorioPerito.css">
+  <link rel="icon" href="../img/logo/Logo.png" type="image/png">
+</head>
+
+<body>
+
+  <!-- Menú de opciones -->
+  <!-- Header -->
+  <header>
+    <nav>
+      <div class="logo">
+        <a href="../htmlIngles/indexIngles.html">
+          <img src="../img/logo/Logo.png" alt="Logo Colitas Felices">
+        </a>
+      </div>
+
+      <!-- Botón hamburguesa (solo visible en móvil) -->
+      <button class="menu-hamburguesa" aria-label="Menú">
+        <span class="barra-hamburguesa"></span>
+        <span class="barra-hamburguesa"></span>
+        <span class="barra-hamburguesa"></span>
+      </button>
+
+      <!-- Menú normal (visible en desktop) -->
+      <div class="menu">
+        <a href="../html/PerritoPedro.html" aria-label="Switch to Spanish">🌐 ESP</a>
+        <a href="../htmlIngles/nosotrosIngles.html">About </a>
+        <a href="../htmlIngles/adoptaIngles.html">Adopt</a>
+        <a href="../htmlIngles/dudasIngles.html">Doubts</a>
+        <a href="../htmlIngles/donaIngles.html">Donate</a>
+        <a href="../htmlIngles/contactoIngles.html">Contact</a>
+
+        <!-- Menú de cuenta (se actualiza automáticamente) -->
+        <div class="submenu">
+          <a href="#" class="submenu-trigger">My Account <span class="submenu-icon">▾</span></a>
+          <div class="submenu-opciones">
+            <!-- Contenido dinámico (se llena con auth-state.js) -->
+            <a href="../htmlIngles/iniciarSesionIngles.html">Log In</a>
+            <a href="../htmlIngles/registrateIngles.html">Sign Up</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Sección Historia de Pedro -->
+  <main class="historia-perrito">
+    <h1>🐾 The Story of Pedro</h1>
+
+    <h3>📍 Where Was He Found?</h3>
+    <p>Pedro was found in the district of <strong>La Esperanza</strong>, in Trujillo, living in an abandoned lot near
+      a deserted construction site. He was malnourished, with neglected fur, and very fearful of humans.</p>
+
+    <h3>💔 What Was His Life Like Before?</h3>
+    <p>For months, Pedro survived by eating leftover garbage and drinking water from puddles. Sometimes he was chased
+      away with stones. He never had a safe place to sleep, and his only shelter was an old board under the rain. The
+      neighbors contacted our shelter when they noticed he was limping on one paw.</p>
+
+    <h3>🎾 What Does He Like to Do?</h3>
+    <p>Now that he is safe, Pedro has shown how amazing he is. He loves to sunbathe in the garden, go for walks on
+      the <strong>Huanchaco beach</strong>, and play with balls. He is a calm dog who enjoys sleeping close to those he
+      loves.</p>
+
+    <h3>👶 How Does He Behave with People or Children?</h3>
+    <p>Pedro is very gentle and patient. He gets along well with small children and elderly people. He loves receiving
+      pets and is especially protective of the most vulnerable members of the household.</p>
+
+    <h3>🏡 What Type of Home Would Be Ideal for Him?</h3>
+    <p>Pedro needs a home with space to move, preferably with a garden or patio. Ideally, a loving family that gives
+      him attention, daily walks, and quality time. He is perfect for those looking for a loyal and grateful companion.
+    </p>
+  </main>
+
+  <!-- Adopt Button -->
+  <section class="boton-adoptar-container" aria-label="Adoption Action">
+    <button id="abrirFormulario" class="boton-adoptar" aria-haspopup="dialog" aria-controls="modalFormulario"
+      aria-expanded="false">
+      🐶 Adopt
+    </button>
+  </section>
+
+
+  <!-- Modal -->
+  <div id="modalFormulario" class="modal" aria-hidden="true" aria-labelledby="modalTitulo" aria-modal="true"
+    role="dialog">
+    <div class="modal-contenido">
+      <button class="cerrar" aria-label="Close modal">&times;</button>
+      <h2 id="modalTitulo">Adoption Form</h2>
+      <form id="formularioAdopcion">
+        <div class="form-group">
+          <label for="nombre">Full Name:</label>
+          <input type="text" id="nombre" name="nombre" required aria-required="true">
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required aria-required="true">
+        </div>
+
+        <div class="form-group">
+          <label for="telefono">Phone:</label>
+          <input type="number" id="telefono" name="telefono" inputmode="numeric" pattern="9[0-9]{8}" maxlength="9"
+            minlength="9" required aria-required="true" placeholder="9XXXXXXXX">
+        </div>
+
+        <div class="form-group">
+          <label for="mensaje">Why do you want to adopt Pedro?</label>
+          <textarea id="mensaje" name="mensaje" rows="4" required aria-required="true"
+            aria-describedby="mensajeHelp"></textarea>
+          <small id="mensajeHelp" class="help-text">Describe your family situation and experience with
+            pets</small>
+        </div>
+
+        <button type="submit" class="enviar-btn">
+          Submit Application
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-contenedor">
+      <div class="footer-logo">
+        <h2>Colitas<span>Felices</span></h2>
+      </div>
+      <div class="footer-links">
+        <a href="../htmlIngles/contactoIngles.html">Contact</a>
+        <a href="../htmlIngles/AvisoLegalIngles.html">Legal Notice</a>
+        <a href="../htmlIngles/PoliticaPrivacidadIngles.html">Privacy Policy</a>
+        <a href="../htmlIngles/PoliticaCookiesIngles.html">Cookie Policy</a>
+        <a href="../htmlIngles/contactoIngles.html">Whistleblower Channel</a>
+        <a href="../htmlIngles/mapaSitioWebIngles.html">Website Sitemap</a>
+      </div>
+      <div class="footer-social">
+        <h3>Follow us</h3>
+        <a href="https://www.instagram.com" target="_blank"><img
+            src="https://cdn-icons-png.flaticon.com/128/1384/1384031.png" alt="Instagram"></a>
+        <a href="https://www.facebook.com" target="_blank"><img
+            src="https://cdn-icons-png.flaticon.com/24/2111/2111392.png" alt="Facebook"></a>
+        <a href="https://www.youtube.com" target="_blank"><img
+            src="https://cdn-icons-png.flaticon.com/128/1077/1077046.png" alt="YouTube"></a>
+        <a href="https://tiktok.com" target="_blank"><img src="https://cdn-icons-png.flaticon.com/128/3046/3046125.png"
+            alt="TikTok"></a>
+      </div>
+      <div class="footer-contact">
+        <h3>Contact</h3>
+        <p><strong>(044) 456-7890</strong></p>
+        <p>123 Animal Love Street, Trujillo City</p>
+        <p><a href="mailto:contacto@colitasFelices.org">contacto@colitasFelices.org</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Website created by <strong>Ariana Fernandez, David García, Diego Cabanillas, and Paula Rodríguez</strong>
+      </p>
+    </div>
+  </footer>
+
+  <script defer src="../main.js"></script>
+  <script defer src="../js/adopcionModal.js"></script>
+  <script src="../js/auth-state-Ingles.js" defer></script>
+</body>
+
+</html>

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colitas Felices :: Welcome</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/styleBienvenidos.css">
+    <link rel="icon" href="../img/logo/Logo.png" type="image/png">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="../htmlIngles/indexIngles.html">
+                    <img src="../img/logo/Logo.png" alt="Logo Colitas Felices">
+                </a>
+            </div>
+
+            <!-- Botón hamburguesa (solo visible en móvil) -->
+            <button class="menu-hamburguesa" aria-label="Menú">
+                <span class="barra-hamburguesa"></span>
+                <span class="barra-hamburguesa"></span>
+                <span class="barra-hamburguesa"></span>
+            </button>
+
+            <!-- Menú normal (visible en desktop) -->
+            <div class="menu">
+                <a href="../html/bienvenidosPrimer.html" aria-label="Switch to Spanish">🌐 ESP</a>
+                <a href="../htmlIngles/nosotrosIngles.html">About </a>
+                <a href="../htmlIngles/adoptaIngles.html">Adopt</a>
+                <a href="../htmlIngles/dudasIngles.html">Doubts</a>
+                <a href="../htmlIngles/donaIngles.html">Donate</a>
+                <a href="../htmlIngles/contactoIngles.html">Contact</a>
+
+                <!-- Menú de cuenta (se actualiza automáticamente) -->
+                <div class="submenu">
+                    <a href="#" class="submenu-trigger">My Account <span class="submenu-icon">▾</span></a>
+                    <div class="submenu-opciones">
+                        <!-- Contenido dinámico (se llena con auth-state.js) -->
+                        <a href="../htmlIngles/iniciarSesionIngles.html">Log In</a>
+                        <a href="../htmlIngles/registrateIngles.html">Sign Up</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="welcome-container">
+        <h2 class="welcome-title">Welcome to Colitas Felices <span class="paw-icon">🐾</span>!</h2>
+        <p class="welcome-message">Thank you for registering, <strong id="user-name-display" class="user-name">New
+                User</strong>.</p>
+
+        <div class="dashboard">
+            <div class="dashboard-card">
+                <div class="card-header">
+                    <span class="card-icon">📋</span>
+                    <h3>Active Adoptions: <span class="highlight">0</span></h3>
+                </div>
+                <ul class="card-list">
+                    <li class="card-item">You haven't started any adoptions yet. Meet our furry friends and feel free to
+                        adopt!</li>
+                </ul>
+                <div class="button-container">
+                    <a href="./adopta.html" class="action-button">Go to Adoptions</a>
+                </div>
+            </div>
+
+            <div class="dashboard-card">
+                <div class="card-header">
+                    <span class="card-icon">📅</span>
+                    <h3>Pending Appointments</h3>
+                </div>
+                <ul class="card-list">
+                    <li class="card-item">You don't have any scheduled appointments at the moment.</li>
+                    <br>
+                </ul>
+                <div class="button-container">
+                    <a href="./contacto.html" class="action-button">Schedule an Appointment</a>
+                </div>
+            </div>
+
+            <div class="dashboard-card">
+                <div class="card-header">
+                    <span class="card-icon">💌</span>
+                    <h3>Important Messages</h3>
+                </div>
+                <ul class="card-list">
+                    <li class="card-item">Remember to keep your data updated to receive notifications.</li>
+                    <li class="card-item">Visit our help section if you have questions about the adoption process.</li>
+                </ul>
+            </div>
+
+            <div class="dashboard-card">
+                <div class="card-header">
+                    <span class="card-icon">💖</span>
+                    <h3>Donations Made</h3>
+                </div>
+                <ul class="card-list">
+                    <li class="card-item">You haven't made any donations yet.</li>
+                    <li class="card-item">Any contribution helps save lives! <span class="heart-icon">💕</span></li>
+                </ul>
+                <div class="button-container">
+                    <a href="./dona.html" class="action-button donation-button">Make a Donation</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="welcome-footer">
+            <span class="dog-icon">🐶</span>
+            <p>Thank you for supporting <strong>Colitas Felices</strong> and giving love to those who need it most!</p>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-contenedor">
+            <div class="footer-logo">
+                <h2>Colitas<span>Felices</span></h2>
+            </div>
+            <div class="footer-links">
+                <a href="../htmlIngles/contactoIngles.html">Contact</a>
+                <a href="../htmlIngles/AvisoLegalIngles.html">Legal Notice</a>
+                <a href="../htmlIngles/PoliticaPrivacidadIngles.html">Privacy Policy</a>
+                <a href="../htmlIngles/PoliticaCookiesIngles.html">Cookie Policy</a>
+                <a href="../htmlIngles/contactoIngles.html">Whistleblower Channel</a>
+                <a href="../htmlIngles/mapaSitioWebIngles.html">Website Sitemap</a>
+            </div>
+            <div class="footer-social">
+                <h3>Follow us</h3>
+                <a href="https://www.instagram.com" target="_blank"><img
+                        src="https://cdn-icons-png.flaticon.com/128/1384/1384031.png" alt="Instagram"></a>
+                <a href="https://www.facebook.com" target="_blank"><img
+                        src="https://cdn-icons-png.flaticon.com/24/2111/2111392.png" alt="Facebook"></a>
+                <a href="https://www.youtube.com" target="_blank"><img
+                        src="https://cdn-icons-png.flaticon.com/128/1077/1077046.png" alt="YouTube"></a>
+                <a href="https://tiktok.com" target="_blank"><img
+                        src="https://cdn-icons-png.flaticon.com/128/3046/3046125.png" alt="TikTok"></a>
+            </div>
+            <div class="footer-contact">
+                <h3>Contact</h3>
+                <p><strong>(044) 456-7890</strong></p>
+                <p>123 Animal Love Street, Trujillo City</p>
+                <p><a href="mailto:contacto@colitasFelices.org">contacto@colitasFelices.org</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Website created by <strong>Ariana Fernandez, David García, Diego Cabanillas, and Paula Rodríguez</strong>
+            </p>
+        </div>
+    </footer>
+
+    <!-- 1. Script principal de bienvenida -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // 1. Obtener datos del usuario desde localStorage
+            const userEmail = localStorage.getItem('userEmail');
+            const userName = localStorage.getItem('userName') || userEmail?.split('@')[0] || 'Nuevo Usuario';
+
+            // 2. Redirigir si no hay usuario registrado
+            if (!userEmail) {
+                const isHtmlFolder = window.location.pathname.includes('/htmlIngles/');
+                window.location.href = isHtmlFolder ? './registrateIngles.html' : '../htmlIngles/registrateIngles.html';
+                return;
+            }
+
+            // 3. Mostrar nombre de bienvenida
+            const nameDisplay = document.getElementById('user-name-display');
+            if (nameDisplay) {
+                nameDisplay.textContent = userName;
+            }
+
+            // 4. Configurar animaciones de las tarjetas
+            document.querySelectorAll('.dashboard-card').forEach((card, index) => {
+                card.style.transform = 'translateY(20px)';
+                card.style.opacity = '0';
+                card.style.transition = 'transform 0.3s ease, opacity 0.3s ease';
+
+                setTimeout(() => {
+                    card.style.transform = 'translateY(0)';
+                    card.style.opacity = '1';
+                }, 100 * index);
+            });
+        });
+    </script>
+
+    <!-- 2. Inicializar estilos de entrada de tarjetas -->
+    <script>
+        document.querySelectorAll('.dashboard-card').forEach(card => {
+            card.style.transform = 'translateY(20px)';
+            card.style.opacity = '0';
+            card.style.transition = 'transform 0.3s ease, opacity 0.3s ease';
+        });
+    </script>
+
+    <!-- 4. Control de menú de sesión y logout -->
+     <script src="../main.js" defer></script>
+    <script src="../js/auth-state-Ingles.js" defer></script>
+</body>
+
+</html>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Colitas Felices :: About</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/styleNosotros.css">
+  <link rel="icon" href="../img/logo/Logo.png" type="image/png">
+</head>
+
+<body>
+
+  <!-- Menú de opciones -->
+  <!-- Header -->
+  <header>
+    <nav>
+      <div class="logo">
+        <a href="../htmlIngles/indexIngles.html">
+          <img src="../img/logo/Logo.png" alt="Logo Colitas Felices">
+        </a>
+      </div>
+
+      <!-- Botón hamburguesa (solo visible en móvil) -->
+      <button class="menu-hamburguesa" aria-label="Menú">
+        <span class="barra-hamburguesa"></span>
+        <span class="barra-hamburguesa"></span>
+        <span class="barra-hamburguesa"></span>
+      </button>
+
+      <!-- Menú normal (visible en desktop) -->
+      <div class="menu">
+        <a href="../html/nosotros.html" aria-label="Switch to Spanish">🌐 ESP</a>
+        <a href="../htmlIngles/nosotrosIngles.html">About </a>
+        <a href="../htmlIngles/adoptaIngles.html">Adopt</a>
+        <a href="../htmlIngles/dudasIngles.html">Doubts</a>
+        <a href="../htmlIngles/donaIngles.html">Donate</a>
+        <a href="../htmlIngles/contactoIngles.html">Contact</a>
+
+        <!-- Menú de cuenta (se actualiza automáticamente) -->
+        <div class="submenu">
+          <a href="#" class="submenu-trigger">My Account <span class="submenu-icon">▾</span></a>
+          <div class="submenu-opciones">
+            <!-- Contenido dinámico (se llena con auth-state.js) -->
+            <a href="../htmlIngles/iniciarSesionIngles.html">Log In</a>
+            <a href="../htmlIngles/registrateIngles.html">Sign Up</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+  <!-- About Us Section -->
+  <section class="nosotros">
+    <div class="contenedor-nosotros">
+      <h1>About Us</h1>
+      <p>
+        At <strong>Colitas Felices</strong>, we believe every pet deserves a loving home.
+        We are dedicated to connecting rescued animals with people willing to give them a second chance.
+        We work closely with shelters and volunteers to ensure responsible adoption processes.
+      </p>
+    </div>
+  </section>
+
+  <!-- Mission Section -->
+  <section class="mision">
+    <div class="contenedor-mision">
+      <h2>Our Mission</h2>
+      <p>
+        We are starting a journey filled with hope and commitment to animal welfare.
+        Our mission is to rescue, protect, and give second chances to furry friends who have been abandoned or
+        mistreated.
+        We strive to provide them with a safe space where they receive love, care, and above all, the chance to find a
+        family that truly values them.
+        Through education and awareness, we aim to inspire more people to join this movement, promoting responsible
+        adoption and respect for all living beings.
+      </p>
+    </div>
+  </section>
+
+  <!-- Vision Section -->
+  <section class="vision">
+    <div class="contenedor-vision">
+      <h2>Our Vision</h2>
+      <p>
+        We dream of a future where no animal suffers from abandonment or abuse,
+        and where love and empathy for them are core values in our society.
+        Even though we're just beginning, we aim to build a caring community that works together
+        to protect and care for the animals who need it most.
+        Our goal is to grow, create a positive impact, and become a reference in animal rescue, rehabilitation, and
+        adoption—
+        ensuring that every furry friend gets the chance to live a dignified life full of love.
+      </p>
+    </div>
+  </section>
+
+  <!-- Sección Metas -->
+  <section class="metas">
+    <div class="contenedor-metas">
+      <h2>Our Goals</h2>
+      <ul>
+        <li>
+          Rescue and Rehabilitation: Increase the number of rescued animals and ensure their full physical and emotional
+          recovery.
+        </li>
+        <li>
+          Responsible Adoptions: Facilitate safe adoption processes, ensuring each furry friend finds a loving and
+          suitable home.
+        </li>
+        <li>
+          Awareness and Education: Launch campaigns to promote respect and care for animals, raising community awareness
+          about their well-being.
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Sección Ubicación -->
+  <section class="ubicacion">
+    <div class="contenedor-ubicacion">
+      <h2>Where Are We?</h2>
+
+      <!-- Contenedor del mapa con fallback -->
+      <div class="mapa-contenedor">
+        <iframe src="https://www.google.com/maps?q=VW6X%2BR6C%2C+Victor+Larco+Herrera+13009&output=embed"
+          class="mapa-interactivo" title="Ubicación de Colitas Felices" aria-label="Mapa interactivo">
+        </iframe>
+
+        <!-- Fallback para sin internet -->
+        <div class="mapa-fallback">
+          <img src="../img/mapa-Estatico.png" alt="Mapa estático de nuestra ubicación">
+        </div>
+      </div>
+
+      <!-- Información de contacto y horarios -->
+      <div class="info-ubicacion">
+        <div class="horario">
+          <h3>🕒 Opening Hours</h3>
+          <ul>
+            <li>Monday to Friday: <strong>9:00 AM - 6:00 PM</strong></li>
+            <li>Saturday: <strong>9:00 AM - 1:00 PM</strong></li>
+            <li>Sunday: <strong>Closed</strong></li>
+          </ul>
+        </div>
+
+        <p class="direccion">📍 123 Animal Love Street, Trujillo City</p>
+
+        <div class="botones-ubicacion">
+          <a href="https://maps.google.com?q=Calle+Amor+Animal+123,Ciudad+Trujillo" target="_blank" class="boton-mapa">
+            Get Directions
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-contenedor">
+      <div class="footer-logo">
+        <h2>Colitas<span>Felices</span></h2>
+      </div>
+      <div class="footer-links">
+        <a href="../htmlIngles/contactoIngles.html">Contact</a>
+        <a href="../htmlIngles/AvisoLegalIngles.html">Legal Notice</a>
+        <a href="../htmlIngles/PoliticaPrivacidadIngles.html">Privacy Policy</a>
+        <a href="../htmlIngles/PoliticaCookiesIngles.html">Cookie Policy</a>
+        <a href="../htmlIngles/contactoIngles.html">Whistleblower Channel</a>
+        <a href="../htmlIngles/mapaSitioWebIngles.html">Website Sitemap</a>
+      </div>
+      <div class="footer-social">
+        <h3>Follow us</h3>
+        <a href="https://www.instagram.com" target="_blank"><img
+            src="https://cdn-icons-png.flaticon.com/128/1384/1384031.png" alt="Instagram"></a>
+        <a href="https://www.facebook.com" target="_blank"><img
+            src="https://cdn-icons-png.flaticon.com/24/2111/2111392.png" alt="Facebook"></a>
+        <a href="https://www.youtube.com" target="_blank"><img
+            src="https://cdn-icons-png.flaticon.com/128/1077/1077046.png" alt="YouTube"></a>
+        <a href="https://tiktok.com" target="_blank"><img src="https://cdn-icons-png.flaticon.com/128/3046/3046125.png"
+            alt="TikTok"></a>
+      </div>
+      <div class="footer-contact">
+        <h3>Contact</h3>
+        <p><strong>(044) 456-7890</strong></p>
+        <p>123 Animal Love Street, Trujillo City</p>
+        <p><a href="mailto:contacto@colitasFelices.org">contacto@colitasFelices.org</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Website created by <strong>Ariana Fernandez, David García, Diego Cabanillas, and Paula Rodríguez</strong>
+      </p>
+    </div>
+  </footer>
+
+
+  <script defer src="../main.js"></script>
+  <script src="../js/auth-state-Ingles.js" defer></script>
+</body>
+
+</html>

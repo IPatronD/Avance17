@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colitas Felices :: Donate Now</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/styleDona.css">
+    <link rel="icon" href="../img/logo/Logo.png" type="image/png">
+</head>
+
+<body>
+
+    <!-- Menú de opciones -->
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="../htmlIngles/indexIngles.html">
+                    <img src="../img/logo/Logo.png" alt="Logo Colitas Felices">
+                </a>
+            </div>
+
+            <!-- Botón hamburguesa (solo visible en móvil) -->
+            <button class="menu-hamburguesa" aria-label="Menú">
+                <span class="barra-hamburguesa"></span>
+                <span class="barra-hamburguesa"></span>
+                <span class="barra-hamburguesa"></span>
+            </button>
+
+            <!-- Menú normal (visible en desktop) -->
+            <div class="menu">
+                <a href="../html/donaAhora.html" aria-label="Switch to Spanish">🌐 ESP</a>
+                <a href="../htmlIngles/nosotrosIngles.html">About </a>
+                <a href="../htmlIngles/adoptaIngles.html">Adopt</a>
+                <a href="../htmlIngles/dudasIngles.html">Doubts</a>
+                <a href="../htmlIngles/donaIngles.html">Donate</a>
+                <a href="../htmlIngles/contactoIngles.html">Contact</a>
+
+                <!-- Menú de cuenta (se actualiza automáticamente) -->
+                <div class="submenu">
+                    <a href="#" class="submenu-trigger">My Account <span class="submenu-icon">▾</span></a>
+                    <div class="submenu-opciones">
+                        <!-- Contenido dinámico (se llena con auth-state.js) -->
+                        <a href="../htmlIngles/iniciarSesionIngles.html">Log In</a>
+                        <a href="../htmlIngles/registrateIngles.html">Sign Up</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="formulario-tarjeta">
+        <h2>Payment Form</h2>
+        <form onsubmit="realizarPagoIngles(); return false;">
+            <label>Amount to Donate:</label>
+            <input type="text" id="monto" placeholder="E.g. 50.00" required>
+
+            <label>Card Number:</label>
+            <input type="text" id="numero-tarjeta" placeholder="XXXX XXXX XXXX XXXX" maxlength="19" required>
+
+            <label>Name of the Holder:</label>
+            <input type="text" placeholder="Name as it appears on the card" required>
+
+            <div class="form-row">
+                <div>
+                    <label>Expiration Date (MM/YY):</label>
+                    <input type="text" id="expira" placeholder="MM/YY" maxlength="5" required>
+                </div>
+                <div>
+                    <label>CVC:</label>
+                    <input type="text" id="cvc" placeholder="123" maxlength="3" required>
+                </div>
+            </div>
+            <div class="bottun">
+                <button type="button" onclick="window.location.href='donaIngles.html'">Back</button>
+                <button type="submit">Donate</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-contenedor">
+            <div class="footer-logo">
+                <h2>Colitas<span>Felices</span></h2>
+            </div>
+            <div class="footer-links">
+                <a href="../htmlIngles/contactoIngles.html">Contact</a>
+                <a href="../htmlIngles/AvisoLegalIngles.html">Legal Notice</a>
+                <a href="../htmlIngles/PoliticaPrivacidadIngles.html">Privacy Policy</a>
+                <a href="../htmlIngles/PoliticaCookiesIngles.html">Cookie Policy</a>
+                <a href="../htmlIngles/contactoIngles.html">Whistleblower Channel</a>
+                <a href="../htmlIngles/mapaSitioWebIngles.html">Website Sitemap</a>
+            </div>
+            <div class="footer-social">
+                <h3>Follow us</h3>
+                <a href="https://www.instagram.com" target="_blank"><img
+                        src="https://cdn-icons-png.flaticon.com/128/1384/1384031.png" alt="Instagram"></a>
+                <a href="https://www.facebook.com" target="_blank"><img
+                        src="https://cdn-icons-png.flaticon.com/24/2111/2111392.png" alt="Facebook"></a>
+                <a href="https://www.youtube.com" target="_blank"><img
+                        src="https://cdn-icons-png.flaticon.com/128/1077/1077046.png" alt="YouTube"></a>
+                <a href="https://tiktok.com" target="_blank"><img
+                        src="https://cdn-icons-png.flaticon.com/128/3046/3046125.png" alt="TikTok"></a>
+            </div>
+            <div class="footer-contact">
+                <h3>Contact</h3>
+                <p><strong>(044) 456-7890</strong></p>
+                <p>123 Animal Love Street, Trujillo City</p>
+                <p><a href="mailto:contacto@colitasFelices.org">contacto@colitasFelices.org</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Website created by <strong>Ariana Fernandez, David García, Diego Cabanillas, and Paula Rodríguez</strong>
+            </p>
+        </div>
+    </footer>
+
+    <script defer src="../main.js"></script>
+    <script src="../js/auth-state-Ingles.js" defer></script>
+</body>
+
+</html>

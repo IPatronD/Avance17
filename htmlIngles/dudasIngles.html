@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Colitas Felices :: Doubts</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/styleDudas.css">
+  <link rel="icon" href="../img/logo/Logo.png" type="image/png">
+</head>
+
+<body>
+
+  <!-- Menú de opciones -->
+  <!-- Header -->
+  <header>
+    <nav>
+      <div class="logo">
+        <a href="../htmlIngles/indexIngles.html">
+          <img src="../img/logo/Logo.png" alt="Logo Colitas Felices">
+        </a>
+      </div>
+
+      <!-- Botón hamburguesa (solo visible en móvil) -->
+      <button class="menu-hamburguesa" aria-label="Menú">
+        <span class="barra-hamburguesa"></span>
+        <span class="barra-hamburguesa"></span>
+        <span class="barra-hamburguesa"></span>
+      </button>
+
+      <!-- Menú normal (visible en desktop) -->
+      <div class="menu">
+        <a href="../html/dudas.html" aria-label="Switch to Spanish">🌐 ESP</a>
+        <a href="../htmlIngles/nosotrosIngles.html">About </a>
+        <a href="../htmlIngles/adoptaIngles.html">Adopt</a>
+        <a href="../htmlIngles/dudasIngles.html">Doubts</a>
+        <a href="../htmlIngles/donaIngles.html">Donate</a>
+        <a href="../htmlIngles/contactoIngles.html">Contact</a>
+
+        <!-- Menú de cuenta (se actualiza automáticamente) -->
+        <div class="submenu">
+          <a href="#" class="submenu-trigger">My Account <span class="submenu-icon">▾</span></a>
+          <div class="submenu-opciones">
+            <!-- Contenido dinámico (se llena con auth-state.js) -->
+            <a href="../htmlIngles/iniciarSesionIngles.html">Log In</a>
+            <a href="../htmlIngles/registrateIngles.html">Sign Up</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+  <!-- Sección de preguntas frecuentes -->
+  <div class="acordeon-preguntas">
+    <h1>Frequently Asked Questions</h1>
+
+    <div class="item">
+      <div class="pregunta">
+        What can I do to help at an animal shelter?
+        <span class="flecha">▶</span>
+      </div>
+      <div class="respuesta">
+        There are many valuable ways! You can donate to help cover veterinary expenses and food. Adopting, volunteering,
+        or sharing information also helps a lot.
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="pregunta">
+        Can I donate items instead of money?
+        <span class="flecha">▶</span>
+      </div>
+      <div class="respuesta">
+        Absolutely! We gladly accept donations such as food, blankets, toys, or cleaning supplies. They’re very useful.
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="pregunta">
+        Do shelters accept students as volunteers?
+        <span class="flecha">▶</span>
+      </div>
+      <div class="respuesta">
+        Yes, with permission from parents or guardians. It’s a great way to learn about responsibility and animal care.
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="pregunta">
+        Does sharing adoption posts really help?
+        <span class="flecha">▶</span>
+      </div>
+      <div class="respuesta">
+        Absolutely! Sharing posts increases the chances of finding a forever home.
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="pregunta">
+        Are there any requirements to volunteer?
+        <span class="flecha">▶</span>
+      </div>
+      <div class="respuesta">
+        We ask for commitment, responsibility, and most importantly, a lot of love for animals.
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-contenedor">
+      <div class="footer-logo">
+        <h2>Colitas<span>Felices</span></h2>
+      </div>
+      <div class="footer-links">
+        <a href="../htmlIngles/contactoIngles.html">Contact</a>
+        <a href="../htmlIngles/AvisoLegalIngles.html">Legal Notice</a>
+        <a href="../htmlIngles/PoliticaPrivacidadIngles.html">Privacy Policy</a>
+        <a href="../htmlIngles/PoliticaCookiesIngles.html">Cookie Policy</a>
+        <a href="../htmlIngles/contactoIngles.html">Whistleblower Channel</a>
+        <a href="../htmlIngles/mapaSitioWebIngles.html">Website Sitemap</a>
+      </div>
+      <div class="footer-social">
+        <h3>Follow us</h3>
+        <a href="https://www.instagram.com" target="_blank"><img
+            src="https://cdn-icons-png.flaticon.com/128/1384/1384031.png" alt="Instagram"></a>
+        <a href="https://www.facebook.com" target="_blank"><img
+            src="https://cdn-icons-png.flaticon.com/24/2111/2111392.png" alt="Facebook"></a>
+        <a href="https://www.youtube.com" target="_blank"><img
+            src="https://cdn-icons-png.flaticon.com/128/1077/1077046.png" alt="YouTube"></a>
+        <a href="https://tiktok.com" target="_blank"><img src="https://cdn-icons-png.flaticon.com/128/3046/3046125.png"
+            alt="TikTok"></a>
+      </div>
+      <div class="footer-contact">
+        <h3>Contact</h3>
+        <p><strong>(044) 456-7890</strong></p>
+        <p>123 Animal Love Street, Trujillo City</p>
+        <p><a href="mailto:contacto@colitasFelices.org">contacto@colitasFelices.org</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Website created by <strong>Ariana Fernandez, David García, Diego Cabanillas, and Paula Rodríguez</strong>
+      </p>
+    </div>
+  </footer>
+
+  <script defer src="../main.js"></script>
+  <script src="../js/auth-state-Ingles.js" defer></script>
+</body>
+
+</html>

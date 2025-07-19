@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Colitas Felices :: Contact</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/styleContacto.css">
+    <link rel="icon" href="../img/logo/Logo.png" type="image/png">
+</head>
+
+<body>
+    <!-- Menú de opciones -->
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="../htmlIngles/indexIngles.html">
+                    <img src="../img/logo/Logo.png" alt="Logo Colitas Felices">
+                </a>
+            </div>
+
+            <!-- Botón hamburguesa (solo visible en móvil) -->
+            <button class="menu-hamburguesa" aria-label="Menú">
+                <span class="barra-hamburguesa"></span>
+                <span class="barra-hamburguesa"></span>
+                <span class="barra-hamburguesa"></span>
+            </button>
+
+            <!-- Menú normal (visible en desktop) -->
+            <div class="menu">
+                <a href="../html/contacto.html" aria-label="Switch to Spanish">🌐 ESP</a>
+                <a href="../htmlIngles/nosotrosIngles.html">About </a>
+                <a href="../htmlIngles/adoptaIngles.html">Adopt</a>
+                <a href="../htmlIngles/dudasIngles.html">Doubts</a>
+                <a href="../htmlIngles/donaIngles.html">Donate</a>
+                <a href="../htmlIngles/contactoIngles.html">Contact</a>
+
+                <!-- Menú de cuenta (se actualiza automáticamente) -->
+                <div class="submenu">
+                    <a href="#" class="submenu-trigger">My Account <span class="submenu-icon">▾</span></a>
+                    <div class="submenu-opciones">
+                        <!-- Contenido dinámico (se llena con auth-state.js) -->
+                        <a href="../htmlIngles/iniciarSesionIngles.html">Log In</a>
+                        <a href="../htmlIngles/registrateIngles.html">Sign Up</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Contact -->
+    <section class="contacto">
+        <h1>Get in Touch with Us</h1>
+        <form class="contacto-form">
+            <label for="nombre">First Name:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Enter your first name" required />
+
+            <label for="apellido">Last Name:</label>
+            <input type="text" id="apellido" name="apellido" placeholder="Enter your last name" required />
+
+            <label for="correo">Email Address:</label>
+            <input type="email" id="correo" name="correo" placeholder="yourname@example.com" required />
+
+            <label for="motivo">Reason for Contact:</label>
+            <select id="motivo" name="motivo" required>
+                <option value="">-- Select a reason --</option>
+                <option value="adopcion">Adoption Inquiry</option>
+                <option value="voluntariado">I want to be a volunteer</option>
+                <option value="donacion">I want to make a donation</option>
+                <option value="reportar">Report a lost or found dog</option>
+                <option value="cuidado">Request care or veterinary services</option>
+                <option value="citas">Request an appointment (Tell us your reasons)</option>
+                <option value="denuncias">Report abuse (Let us know the area so we can investigate)</option>
+                <option value="otros">Other (Specify in the message)</option>
+            </select>
+
+            <label for="mensaje">Message:</label>
+            <textarea id="mensaje" name="mensaje" rows="5" placeholder="Write your message here" required></textarea>
+
+            <input type="submit" value="Send" />
+        </form>
+    </section>
+
+    <!-- Notification -->
+    <div id="notificacion" class="notificacion">Message sent successfully! 🐶</div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-contenedor">
+            <div class="footer-logo">
+                <h2>Colitas<span>Felices</span></h2>
+            </div>
+            <div class="footer-links">
+                <a href="../htmlIngles/contactoIngles.html">Contact</a>
+                <a href="../htmlIngles/AvisoLegalIngles.html">Legal Notice</a>
+                <a href="../htmlIngles/PoliticaPrivacidadIngles.html">Privacy Policy</a>
+                <a href="../htmlIngles/PoliticaCookiesIngles.html">Cookie Policy</a>
+                <a href="../htmlIngles/contactoIngles.html">Whistleblower Channel</a>
+                <a href="../htmlIngles/mapaSitioWebIngles.html">Website Sitemap</a>
+            </div>
+            <div class="footer-social">
+                <h3>Follow us</h3>
+                <a href="https://www.instagram.com" target="_blank"><img
+                        src="https://cdn-icons-png.flaticon.com/128/1384/1384031.png" alt="Instagram"></a>
+                <a href="https://www.facebook.com" target="_blank"><img
+                        src="https://cdn-icons-png.flaticon.com/24/2111/2111392.png" alt="Facebook"></a>
+                <a href="https://www.youtube.com" target="_blank"><img
+                        src="https://cdn-icons-png.flaticon.com/128/1077/1077046.png" alt="YouTube"></a>
+                <a href="https://tiktok.com" target="_blank"><img
+                        src="https://cdn-icons-png.flaticon.com/128/3046/3046125.png" alt="TikTok"></a>
+            </div>
+            <div class="footer-contact">
+                <h3>Contact</h3>
+                <p><strong>(044) 456-7890</strong></p>
+                <p>123 Animal Love Street, Trujillo City</p>
+                <p><a href="mailto:contacto@colitasFelices.org">contacto@colitasFelices.org</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Website created by <strong>Ariana Fernandez, David García, Diego Cabanillas, and Paula Rodríguez</strong>
+            </p>
+        </div>
+    </footer>
+
+    <script defer src="../main.js"></script>
+    <script src="../js/auth-state-Ingles.js" defer></script>
+</body>
+
+</html>
